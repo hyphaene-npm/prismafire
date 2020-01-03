@@ -1,22 +1,14 @@
-const argv = require("yargs").argv;
-const path = require("path");
+const argv = require('yargs').argv;
+const path = require('path');
+const fs = require('fs');
+const yaml = require('js-yaml');
 
-const {
-	DEFAULT_PRISMA_INPUT,
-	DEFAULT_PRISMA_OUTPUT,
-	DEFAULT_GLOB,
-} = require("./constants");
-
-const getPrismaInputPath = () =>
-	path.resolve(process.cwd(), argv.input || DEFAULT_PRISMA_INPUT);
-
-const getPrismaOutputPath = () =>
-	path.resolve(process.cwd(), argv.output || DEFAULT_PRISMA_OUTPUT);
-
-const getGlob = () => argv.glob || DEFAULT_GLOB;
+const getGlob = require('./getGlob');
+const getPrismaFileContent = require('./getPrismaFileContent');
+const generatePrismaFile = require('./generatePrismaFile');
 
 module.exports = {
 	getGlob,
-	getPrismaInputPath,
-	getPrismaOutputPath,
+	getPrismaFileContent,
+	generatePrismaFile
 };
