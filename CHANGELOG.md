@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/hyphaene-npm/prismafire/compare/v0.0.3...v0.0.4) (2020-01-03)
+
+
+### Bug Fixes
+
+* **package.json:** fix script to publish and push ([97f5980](https://github.com/hyphaene-npm/prismafire/commit/97f598074a78a03e10b3967536d3c92f89d5be8e))
+
 ### [0.0.3](https://github.com/hyphaene-npm/prismafire/compare/v0.0.2...v0.0.3) (2020-01-03)
 
 
