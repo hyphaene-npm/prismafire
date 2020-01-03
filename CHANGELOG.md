@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/hyphaene-npm/prismafire/compare/v0.0.10...v0.1.0) (2020-01-03)
+
+
+### Features
+
+* **input:** handle yaml file ([29c7dd7](https://github.com/hyphaene-npm/prismafire/commit/29c7dd7))
+
+
+
 ### [0.0.10](https://github.com/hyphaene-npm/prismafire/compare/v0.0.9...v0.0.10) (2020-01-03)
 
 
