@@ -2,6 +2,14 @@
 	"name": "prismafire",
 	"version": "0.0.9",
 	"description": "",
+	"author": "Maximilien Garenne <maximilien.garenne@gmail.com",
+	"license": "ISC",
+	"homepage": "https://github.com/hyphaene-npm/prismafire#readme",
+	"bugs": "https://github.com/hyphaene-npm/prismafire/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hyphaene-npm/prismafire"
+	},
 	"main": "index.js",
 	"bin": {
 		"prismafire": "./index.js"
@@ -19,8 +27,6 @@
 		"yaml",
 		"yml"
 	],
-	"author": "",
-	"license": "ISC",
 	"dependencies": {
 		"glob": "^7.1.6",
 		"js-yaml": "^3.13.1",
