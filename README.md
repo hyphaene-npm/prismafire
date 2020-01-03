@@ -20,6 +20,11 @@ This is the default structure where `prismafire` will work with zero conf
 └── package.json
 ```
 
+## Installation
+```
+npm install -D prismafire
+```
+
 ## Options 
 ### input
 If your prisma.json is elsewhere, you can specify `--input` to indicate where to fetch the file.
