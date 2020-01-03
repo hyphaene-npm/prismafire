@@ -9,9 +9,16 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"release": "standard-version",
-		"push": "git push --follow-tags origin master && npm publish"
+		"push": "git push --follow-tags origin master && npm publish",
+		"commit": "git-cz"
 	},
-	"keywords": [],
+	"keywords": [
+		"prisma",
+		"conf",
+		"glob",
+		"yaml",
+		"yml"
+	],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
@@ -28,7 +35,13 @@
 	"devDependencies": {
 		"@commitlint/cli": "^8.3.3",
 		"@commitlint/config-conventional": "^8.3.3",
+		"cz-conventional-changelog": "^3.0.2",
 		"husky": "^3.1.0",
 		"standard-version": "^7.0.1"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
 	}
 }
