@@ -16,7 +16,7 @@ const getPrismaFileContent = () => {
 			throw new Error('Sorry, this extension file is not handled. Please submit an issue.');
 		}
 	} else {
-		return require(resolveFromCWD(DEFAULT_PRISMA_INPUT));
+		return getYmlFile(DEFAULT_PRISMA_INPUT);
 	}
 };
 
