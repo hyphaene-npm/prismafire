@@ -5,9 +5,8 @@
 
 ## Purpose 
 
-This package aims to reduce the pain of writing all datamodels on the prisma.yml file by generating it.
-
-For now, it's done by creating it from a `json` file, using optionnaly specified glob to fill the datamodel key automatically.
+This package aims to reduce the pain of writing all datamodels on the prisma.yml file.
+It will regenerate it with populating datamodels field by intropecting your project.
 
 This is the default structure where `prismafire` will work with zero conf
 
@@ -15,19 +14,18 @@ This is the default structure where `prismafire` will work with zero conf
 ├── src
 │   └── datamodels
 │       └── **/*.graphql
-├── prisma.yml ( generated )
-├── prisma.json ( used for generation)
+├── prisma.yml ( default input and default ouput )
 └── package.json
 ```
 
 ## Installation
 ```
-npm install -D prismafire
+npm install -D prismafire@latest
 ```
 
 ## Options 
 ### input
-If your prisma.json is elsewhere, you can specify `--input` to indicate where to fetch the file.
+If your prisma.yml is elsewhere, you can specify `--input` to indicate where to fetch the file.
 ### output
 If your prisma.yml should be elsewhere, you can specify ```--output``` to indicate where to write the file.
 ### glob
