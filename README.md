@@ -1,5 +1,7 @@
 # Prismafire
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+![_](https://img.shields.io/npm/dm/prismafire)
 
 ## Purpose 
 
