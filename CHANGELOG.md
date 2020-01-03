@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/hyphaene-npm/prismafire/compare/v0.0.4...v0.0.5) (2020-01-03)
+
+
+### Features
+
+* **workflow:** add commitizen ([882a2ed](https://github.com/hyphaene-npm/prismafire/commit/882a2ed71b2881c3728b6cc9cde2fcb4808d69e7))
+
 ### [0.0.4](https://github.com/hyphaene-npm/prismafire/compare/v0.0.3...v0.0.4) (2020-01-03)
 
 
