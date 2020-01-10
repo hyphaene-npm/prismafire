@@ -3,24 +3,25 @@ const glob = require('glob');
 
 const { getGlob, getPrismaFileContent, generatePrismaFile } = require('./utils');
 
-async function main() {
-	return new Promise((resolve, reject) => {
-		glob(getGlob(), (err, files) => {
-			if (!err) {
-				try {
-					const data = getPrismaFileContent();
-					generatePrismaFile(data, files);
-					resolve('prisma file generated !');
-				} catch (error) {
-					reject(error);
-				}
-			} else {
-				reject(err);
-			}
-		});
-	});
-}
+glob(getGlob(), (err, files) => {
+	if (!err) {
+		try {
+			if (files.length === 0) {
+				process.exit(1);
 
-main()
-	.then(console.log)
-	.catch(console.log);
+				console.log('No files found !');
+			} else {
+				const data = getPrismaFileContent();
+				generatePrismaFile(data, files);
+				console.log('prisma file generated !');
+				process.exit(0);
+			}
+		} catch (error) {
+			console.error(error);
+			process.exit(1);
+		}
+	} else {
+		console.log(err);
+		process.exit(1);
+	}
+});

@@ -1,10 +1,10 @@
 const argv = require('yargs').argv;
 
-const resolveFromCWD = require('./resolveFromCWD');
+const resolveFromCWD = require('../resolveFromCWD');
 const isInputExt = require('./isInputExt');
 const getYmlFile = require('./getYmlFile');
 
-const { DEFAULT_PRISMA_INPUT } = require('./constants');
+const { DEFAULT_PRISMA_INPUT } = require('../constants');
 
 const getPrismaFileContent = () => {
 	if (argv.input) {

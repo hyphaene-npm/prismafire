@@ -12,15 +12,16 @@ This is the default structure where `prismafire` will work with zero conf
 
 ```
 ├── src
-│   └── datamodels
-│       └── **/*.graphql
+│   └── prisma
+│       └── datamodels
+│           └── **/*.graphql
 ├── prisma.yml ( default input and default ouput )
 └── package.json
 ```
 
 ## Installation
 ```
-npm install -D prismafire@latest
+npm install -D prismafire
 ```
 
 ## Options 
@@ -34,18 +35,21 @@ You can also set a different glob to match your datamodels fils through the ```-
 ## how to use it 
 ### scripts 
 
-I suggest adding two scripts on the package json : 
+I suggest adding this script on the package json : 
 
 ```json 
 {
     // ...
     "scripts": {
         // ...
-        "prisma":"prisma",
-        "preprisma":"primafire" // or with options 
+        "prisma:deploy":"prismafire && prisma deploy ", // you can pass options after prismafire 
+        // or with options ( ex with --glob)
+        "prisma:deploy":"prismafire --glob custom/**.glob && prisma deploy ",  
     }
 }
 ```
-then run prisma cli via the script.
+or 
 
-This way, you'll trigger the hook to generate the prisma file before each command using it.
+then run prisma deploy via the script.
+
+This way, you'll trigger the hook to generate the prisma file before asking for deployment
