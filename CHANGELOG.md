@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/hyphaene-npm/prismafire/compare/v1.0.1...v2.0.0) (2020-01-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* **glob pattern:** allow to isolate prisma files
+
+### Features
+
+* **glob pattern:** change glob pattern ([47aef26](https://github.com/hyphaene-npm/prismafire/commit/47aef262e24e166157ab993e7191211831a26545))
+
 ### [1.0.1](https://github.com/hyphaene-npm/prismafire/compare/v1.0.0...v1.0.1) (2020-01-03)
 
 
