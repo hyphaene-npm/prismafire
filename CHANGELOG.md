@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/hyphaene-npm/prismafire/compare/v2.0.0...v2.0.1) (2020-01-10)
+
+
+### Bug Fixes
+
+* **glob:** fix glob default ([904e592](https://github.com/hyphaene-npm/prismafire/commit/904e592b7b05cc86638500574494c2f15e3dc89b))
+
 ## [2.0.0](https://github.com/hyphaene-npm/prismafire/compare/v1.0.1...v2.0.0) (2020-01-10)
 
 
