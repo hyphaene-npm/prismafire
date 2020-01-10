@@ -1,4 +1,4 @@
-const DEFAULT_GLOB = './src/prisma/datamodels/**/*.graphqlaaa';
+const DEFAULT_GLOB = './src/prisma/datamodels/**/*.graphql';
 const PRISMA_PATH = './prisma.yml';
 const DEFAULT_PRISMA_INPUT = PRISMA_PATH;
 const DEFAULT_PRISMA_OUTPUT = PRISMA_PATH;

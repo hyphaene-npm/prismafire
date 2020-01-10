@@ -7,9 +7,8 @@ glob(getGlob(), (err, files) => {
 	if (!err) {
 		try {
 			if (files.length === 0) {
-				process.exit(1);
-
 				console.log('No files found !');
+				process.exit(1);
 			} else {
 				const data = getPrismaFileContent();
 				generatePrismaFile(data, files);
